@@ -4,7 +4,7 @@
   "description": "teste em node para a growth7",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only src/index.ts",
+    "dev": "ts-node-dev --transpile-only src/main.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
