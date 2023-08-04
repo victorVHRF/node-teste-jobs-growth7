@@ -2,5 +2,5 @@ export interface Job {
   id: number;
   descricao: string;
   dataMaximaConclusao: Date;
-  tempoEstimado: string;
+  tempoEstimado: number;
 }

@@ -1,13 +1,13 @@
 import { Job } from "./job.interface.ts";
 
-function calculateTotalTime(jobs: Job[]): string {
-  return jobs.reduce((totalTime, job) => totalTime + job.tempoEstimado, '0')
+function calculateTotalTime(jobs: Job[]): number {
+  return jobs.reduce((totalTime, job) => totalTime + job.tempoEstimado, 0)
 }
 
 function isValidJobSequence(jobs: Job[]): boolean {
   const totalTime = calculateTotalTime(jobs)
 
-  return totalTime <= '8'
+  return totalTime <= 8
 }
 
 function sortJobsByDate(jobs: Job[]): Job[] {
